@@ -16,6 +16,8 @@
 	rel='stylesheet' type='text/css'>
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript"
+	src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="js/lib/jquery.sticky.js"></script>
 <script>
       $(window).load(function() {
@@ -25,24 +27,6 @@
       });
 </script>
 
-<script>
-      $(document).ready(function() {
-          $(function() {
-              $('a[href*=#]:not([href=#])').click(function() {
-                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                      var target = $(this.hash);
-                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                      if (target.length) {
-                          $('html,body').animate({
-                              scrollTop: target.offset().top - 35
-                          }, 500);
-                          return false;
-                      }
-                  }
-              });
-          });
-      });
-   </script>
 </head>
 <body>
 	<pre>
