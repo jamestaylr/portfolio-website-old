@@ -1,3 +1,7 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles//monokai_sublime.min.css');
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,300,500,800');
+
 body {
 	line-height: 1.2em;
 }
