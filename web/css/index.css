@@ -13,13 +13,13 @@ a:hover {
 }
 
 ::selection {
-	background: rgba(85, 57, 115, 0.8);
+	background: rgba(35, 36, 31, 0.4);
 	color: #FFF;
 	opacity: 0.5;
 }
 
 ::-moz-selection {
-	background: #553973;
+	background: rgba(35, 36, 31, 0.4);
 	color: #FFF;
 	opacity: 0.5;
 }
@@ -42,6 +42,7 @@ pre {
 	height: 280px;
 	overflow: hidden;
 	background-color: #23241F;
+	opacity: 0.65;
 	/*background-color: #553973;*/
 }
 
