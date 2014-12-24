@@ -1,8 +1,8 @@
 <DOCTYPE html>
 <head>
 <title>James Taylor | Portfolio Website</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="{{ static_url("css/reset.css") }}">
+<link rel="stylesheet" type="text/css" href="{{ static_url("css/index.css") }}">
 
 <script
 	src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
@@ -10,8 +10,8 @@
 
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/smooth-scroll.js"></script>
-<script type="text/javascript" src="js/lib/jquery.sticky.js"></script>
+<script type="text/javascript" src="{{ static_url("js/smooth-scroll.js") }}"></script>
+<script type="text/javascript" src="{{ static_url("js/lib/jquery.sticky.js") }}"></script>
 <script>
       $(window).load(function() {
           $("nav").sticky({
