@@ -1,4 +1,5 @@
-
+__pycache__/
+*.py[cod]
 .settings/
 web/css/webfonts
 web/js/lib
