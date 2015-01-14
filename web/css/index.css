@@ -1,6 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:300,400');
-@import url('http://fonts.googleapis.com/css?family=Raleway:400,300,100,500,600,700,800');
-@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400');
+
+@import
+	url('http://fonts.googleapis.com/css?family=Raleway:400,300,100,500,600,700,800')
+	;
+
+@import
+	url('http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400')
+	;
 
 body {
 	line-height: 1.2em;
@@ -76,18 +82,18 @@ nav ul li {
 
 nav ul li a {
 	-webkit-transition: color 0.25s ease;
-    -moz-transition: color 0.25s ease;
-    -o-transition: color 0.25s ease;
-    transition: color 0.25s ease;
+	-moz-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
+	transition: color 0.25s ease;
 	text-decoration: none;
 	color: #000;
 }
 
 nav ul li a:hover {
 	-webkit-transition: color 0.25s ease;
-    -moz-transition: color 0.25s ease;
-    -o-transition: color 0.25s ease;
-    transition: color 0.25s ease;
+	-moz-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
+	transition: color 0.25s ease;
 	text-decoration: none;
 	color: #888;
 }
@@ -178,8 +184,13 @@ ul {
 	font-size: 18px;
 	line-height: 1.8em;
 	margin-left: 20px;
-	list-style: square inside
-		url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjIiIGZpbGwtb3BhY2l0eT0iMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMiIgZmlsbD0iIzAwMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMiIgZmlsbC1vcGFjaXR5PSIwIj48L3JlY3Q+Cgo8L3N2Zz4=");
+}
+
+section ul li:before {
+	content: "\2013";
+	position: relative;
+	left: -5px;
+	z-index: -1;
 }
 
 /* ---------------------------------------------------------- */
@@ -214,11 +225,10 @@ footer a, footer a:before {
 	font-family: 'Mono Social Icons Font';
 	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	
 	-webkit-transition: opacity 0.5s ease;
-    -moz-transition: opacity 0.5s ease;
-    -o-transition: opacity 0.5s ease;
-    transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
 	opacity: 0.6;
 }
 
@@ -239,12 +249,10 @@ footer a:nth-of-type(3) {
 	color: #8f5f46;
 }
 
-
 footer a:hover {
 	-webkit-transition: opacity 0.5s ease;
-    -moz-transition: opacity 0.5s ease;
-    -o-transition: opacity 0.5s ease;
-    transition: opacity 0.5s ease;
-
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
 	opacity: 1;
 }
