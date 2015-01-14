@@ -1,12 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:300,400');
-
-@import
-	url('http://fonts.googleapis.com/css?family=Raleway:400,300,100,500,800')
-	;
-
-@import
-	url('http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400')
-	;
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,300,100,500,600,700,800');
+@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400');
 
 body {
 	line-height: 1.2em;
@@ -15,23 +9,11 @@ body {
 a {
 	cursor: pointer;
 	text-decoration: none;
-	color: #60D9F1;
+	color: #6db6ee;
 }
 
 a:hover {
 	text-decoration: underline;
-}
-
-::selection {
-	background: #3EBBEE;
-	color: #FFF;
-	opacity: 0.5;
-}
-
-::-moz-selection {
-	background: #3EBBEE;
-	color: #FFF;
-	opacity: 0.5;
 }
 
 @font-face {
@@ -49,7 +31,7 @@ pre {
 	left: 0;
 	font-size: 13px;
 	line-height: 14px;
-	opacity: 0.2;
+	opacity: 0.12;
 	width: 25%;
 }
 
@@ -93,11 +75,19 @@ nav ul li {
 }
 
 nav ul li a {
+	-webkit-transition: color 0.25s ease;
+    -moz-transition: color 0.25s ease;
+    -o-transition: color 0.25s ease;
+    transition: color 0.25s ease;
 	text-decoration: none;
 	color: #000;
 }
 
 nav ul li a:hover {
+	-webkit-transition: color 0.25s ease;
+    -moz-transition: color 0.25s ease;
+    -o-transition: color 0.25s ease;
+    transition: color 0.25s ease;
 	text-decoration: none;
 	color: #888;
 }
@@ -121,6 +111,7 @@ section {
 section:first-of-type {
 	height: 65vh;
 	background-image: url('../img/background.jpg');
+	/*background-color: #4F4A59;*/
 	-webkit-background-size: contain;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -132,13 +123,14 @@ section:first-of-type {
 /* ---------------------------------------------------------- */
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 88px;
-	line-height: 0.8em;
-	font-weight: 500;
+	font-size: 68px;
+	line-height: 1em;
+	font-weight: 100;
 	display: inline-block;
 	color: white;
 	padding: 14px 14px 24px 14px; /* counter acts font misalignment */
-	margin-top: 1em;
+	margin-top: 14vh;
+	border-bottom: 4px solid white;
 }
 
 h2 {
@@ -222,6 +214,12 @@ footer a, footer a:before {
 	font-family: 'Mono Social Icons Font';
 	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	
+	-webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	opacity: 0.6;
 }
 
 footer a:before {
@@ -229,14 +227,24 @@ footer a:before {
 	font-size: 130%;
 }
 
-footer a:hover:nth-of-type(1) {
+footer a:nth-of-type(1) {
 	color: #636363;
 }
 
-footer a:hover:nth-of-type(2) {
+footer a:nth-of-type(2) {
 	color: #f27922;
 }
 
-footer a:hover:nth-of-type(3) {
+footer a:nth-of-type(3) {
 	color: #8f5f46;
+}
+
+
+footer a:hover {
+	-webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+
+	opacity: 1;
 }
