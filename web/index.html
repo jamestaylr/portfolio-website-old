@@ -7,11 +7,11 @@
 
 <script
 	src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="{{ static_url("js/smooth-scroll.js") }}"></script>
+<script type="text/javascript" src="{{ static_url("js/code.js") }}"></script>
 <script type="text/javascript" src="{{ static_url("js/lib/jquery.sticky.js") }}"></script>
 <script>
       $(window).load(function() {
@@ -23,99 +23,9 @@
 </head>
 <body>
 	<section id="cover">
-		<pre>
-            <code class="css">
-::-moz-selection {
-    background: #553973;
-    color: #FFF;
-    opacity: 0.5;
-}
-
-@font-face {
-    font-family: 'Mono Social Icons Font';
-    font-style: normal;
-    font-weight: 400;
-    src: url(MonoSocialIconsFont-1.10.ttf) format(truetype);
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.8em;
-    color: #6c6c6c;
-    font-weight: 300;
-}
-
-			</code>
-	    </pre>
-		<pre>
-		    <code class="css">
-h2 {
-    padding-top: 0.8em;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.8em;
-    color: #0f0f0f;
-    line-height: 1.8em;
-    font-weight: 300;
-}
-
-section:first-of-type h2 {
-    margin-top: 1em;
-    padding-top: 0;
-    background-color: rgba(8, 8, 8, 0.8);
-    color: white;
-    padding: 10px;
-    display: inline-block;
-}
-		    </code>
-	    </pre>
-		<pre>
-            <code class="css">
-pre {
-    font-family: Consolas, monospace;
-    position:absolute;
-    z-index: -1;
-    left: 0;
-    background-color:white;
-    font-size: 13px;
-    line-height: 14px;
-    width: 450px;
-}
-
-pre:nth-of-type(2) {
-    left: 450px;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.8em;
-}
-            </code>
-        </pre>
-		<pre>
-            <code class="css">
-footer {
-    /*background-color: #2f2f2f;*/
-    /*border-top: 10px solid #553973;*/
-    color: #f2f2f2;
-    font-size: 3em;
-    line-height: 3em;
-    text-align: center;
-}
-
-footer a {
-    -moz-transition: color .15s linear;
-    -ms-transition: color .15s linear;
-    -o-transition: color .15s linear;
-    -webkit-transition: color .15s linear;
-    /*color: #FFF;*/
-    text-decoration: none;
-    transition: color .15s linear;
-}
-            </code>
-        </pre>
+		<pre id="code">
+		</pre>
+        
 		<h1>James Taylor</h1>
 		<br />
 		<h2>Technology Enthusiast, Code Lover, Designer</h2>
@@ -176,6 +86,9 @@ footer a {
 			super cool. I have a long-kindered love for robotics and frontend
 			design.
 		</p>
+		<p>
+           Fun fact: The code in the background of this site dynamically updates! It's the code of the website itself.
+        </p>
 
 
 	</section>
